@@ -1,0 +1,23 @@
+npm install -g hexo-cli
+ hexo init myBlog
+ hexo s
+ _posts  加入md文件
+ hexo new [layout] <title>
+ 
+ hexo g  生成网页
+ 
+ 
+ 
+ 
+ hexo d  部署
+ 
+ 
+ 
+ 安装主题
+ mkdir themes/next
+ git clone https://github.com/iissnan/hexo-theme-next themes/next
+ 
+ cnpm install hexo-deployer-git --save
+ 
+ 
+ hexo new page about

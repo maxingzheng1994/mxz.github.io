@@ -1,3 +1,4 @@
-hexo clean;
-hexo g;
-hexo d;
+hexo g -d
+hexo clean
+
+hexo s -w
