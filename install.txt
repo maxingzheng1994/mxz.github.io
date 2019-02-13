@@ -1,19 +1,19 @@
 npm install -g hexo-cli
  hexo init myBlog
  hexo s
- _posts  加入md文件
+ _posts  鍔犲叆md鏂囦欢
  hexo new [layout] <title>
  
- hexo g  生成网页
+ hexo g  鐢熸垚缃戦〉
  
  
  
  
- hexo d  部署
+ hexo d  閮ㄧ讲
  
  
  
- 安装主题
+ 瀹夎涓婚
  mkdir themes/next
  git clone https://github.com/iissnan/hexo-theme-next themes/next
  
