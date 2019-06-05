@@ -2,7 +2,7 @@
 title: base
 date: 2019-02-13 19:41:58
 tags:
-categories:
+categories: java
 ---
 1、static方法，因为被static修饰的方法是属于类的，而不是属于实例的
 
