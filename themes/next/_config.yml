@@ -173,7 +173,7 @@ scheme: Gemini
 site_state: true
 
 # Social Links
-# Usage: `Key: permalink || icon`
+#  Usage: `Key: permalink || icon`
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
