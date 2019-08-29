@@ -1,17 +1,33 @@
 language: node_js
+sudo: required
+
 node_js: stable
 
-# S: Build Lifecycle
+cache:
+  directories:
+    - node_modules
+
+branches:
+  only:
+    - master
+env:
+ global:
+   - GH_REF: github.com/mxz1994/mxz1994.github.io.git
+
+before_install:
+  - npm install -g hexo-cli
+
+# Start: Build Lifecycle
 install:
   - npm install
+  - npm install hexo-deployer-git --save
 
-
-#before_script:
- # - npm install -g gulp
-
+# 执行清缓存，生成网页操作
 script:
-  - hexo g
+  - hexo clean
+  - hexo generate
 
+# 设置git提交名，邮箱；替换真实token到_config.yml文件，最后depoy部署
 after_script:
   - cd ./public
   - git init
@@ -19,12 +35,6 @@ after_script:
   - git config user.email "836323493@qq.com"
   - git add .
   - git commit -m "Update docs"
-  - git push --force --quiet "https://${myToken}@${GH_REF}" master:master
-# E: Build LifeCycle
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 
-branches:
-  only:
-    - blog-resource
-env:
- global:
-   - GH_REF: github.com/mxz1994/mxz1994.github.io.git
+# End: Build LifeCycle
