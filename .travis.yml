@@ -9,7 +9,7 @@ cache:
 
 branches:
   only:
-    - master
+    - hexo
 env:
  global:
    - GH_REF: github.com/mxz1994/mxz1994.github.io.git
