@@ -6,7 +6,7 @@
   sudo cp -r contrib/vim/* /etc/vim   # vim高亮配置
 ```
 查看nginx文件
-![nginx](_v_images/20190609020234609_4755.png)
+![](https://raw.githubusercontent.com/mxz1994/note/master/20190828205606.png)
 
 安装
 ```bash
@@ -101,7 +101,7 @@ kill -USR1 $(cat /home/mxz/nginx/logs/nginx.pid)
 
 ##### nginx.conf
 nginx压缩配置   对cpu损耗  传输效率提高
-![](_v_images/20190609053222426_31049.png)
+![](https://raw.githubusercontent.com/mxz1994/note/master/20190828205632.png)
 
 代理服务
 启动 nginx服务1  设定
@@ -172,8 +172,7 @@ make
 suido make install      #编译安装
 ```
 配置nginx.conf 使用lua脚本
-![](_v_images/20190609201803510_31338.png)
-![](_v_images/20190609201847811_23321.png)
+![](https://raw.githubusercontent.com/mxz1994/note/master/20190828205650.png)
 
 ```conf
 #运行用户
@@ -362,8 +361,9 @@ ngx.log(ngx.ERR,	"num:",	num)
 网络日志输出 	[lua-resty-logger-socket](https://github.com/cloudflare/lua-resty-logger-socket)
 lua-resty-logger-socket	的目标是替代	Nginx	标准的	ngx_http_log_module	以非阻塞	IO	方式 推送	access	log	到远程服务器上。对远程服务器的要求是支持	syslog-ng	的日志服务。
 ##### nginx 内置变量参数（ngx.var.）
-![](_v_images/20190705200813098_30733.png)
-![](_v_images/20190705200839682_32178.png)
+![](https://raw.githubusercontent.com/mxz1994/note/master/20190828205754.png)
+
+![](https://raw.githubusercontent.com/mxz1994/note/master/20190828205826.png)
 ###### nginx 黑名单
 ```
 #使用access阶段完成准入阶段处理
@@ -381,16 +381,17 @@ lua-resty-logger-socket	的目标是替代	Nginx	标准的	ngx_http_log_module	�
 ##### 防止sql注入
 
 ##### Nginx进程结构
-![](_v_images/20190609233429885_30087.png =656x)
-![](_v_images/20190609234209688_5867.png =589x)
+![](https://raw.githubusercontent.com/mxz1994/note/master/20190828205900.png)
+
+![](https://raw.githubusercontent.com/mxz1994/note/master/20190828205931.png)
 
 reload流程
-![](_v_images/20190609234754734_12821.png =625x)
-![](_v_images/20190609235716623_4994.png =600x)
+![](https://raw.githubusercontent.com/mxz1994/note/master/20190828205946.png)
+![](https://raw.githubusercontent.com/mxz1994/note/master/20190828210008.png)
 
 ##### 热升级流程
-![](_v_images/20190610000410633_944.png =600x)
+![](https://raw.githubusercontent.com/mxz1994/note/master/20190828210027.png)
 
 ##### epoll的原理
-![](_v_images/20190610005204072_6416.png =650x)
+![](https://raw.githubusercontent.com/mxz1994/note/master/20190828210045.png)
 ##### ngix模块划分
